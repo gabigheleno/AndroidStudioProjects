@@ -27,7 +27,7 @@ class ListFragment : Fragment() {
 
         // val floatingAdd = view.findViewById<FloatingActionButton>(R.id.floatingAdd)
 
-        val listTarefas = listOf(
+        /*val listTarefas = listOf(
             Tarefa(
                 "Arrumar a cama",
                 "Arrumar a cama todos os dias",
@@ -52,7 +52,7 @@ class ListFragment : Fragment() {
                 false,
                 "Leitura"
             ),
-        )
+        )*/
 
         //Configuração do RecyclerView
 
@@ -61,7 +61,7 @@ class ListFragment : Fragment() {
         binding.recyclerTarefa.adapter = adapter
         binding.recyclerTarefa.setHasFixedSize(true)
 
-        adapter.setList(listTarefas)
+        //adapter.setList(listTarefas)
 
         binding.floatingAdd.setOnClickListener {
             findNavController().navigate(R.id.action_listFragment_to_formFragment)
